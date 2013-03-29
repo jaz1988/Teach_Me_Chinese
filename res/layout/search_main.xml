@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbars="horizontal|none" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <EditText
+            android:id="@+id/et_newWord"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_newWord"
+            android:layout_toRightOf="@+id/tv_newWord"
+            android:ems="10"
+            android:maxLines="1"
+            android:scrollbars="horizontal"
+            android:textSize="16dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_meaning"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_meaning"
+            android:layout_alignBottom="@+id/tv_meaning"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_meaning"
+            android:editable="false"
+            android:ems="10"
+            android:maxLines="1"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/et_pronunciation"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_pronunciation"
+            android:layout_alignBottom="@+id/tv_pronunciation"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_pronunciation"
+            android:ems="10"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_chi_eng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_newWord"
+            android:layout_toLeftOf="@+id/et_newWord"
+            android:text="(Chi/Eng)"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tv_pronunciation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_meaning"
+            android:layout_marginTop="17dp"
+            android:layout_toLeftOf="@+id/et_meaning"
+            android:editable="false"
+            android:text="PinYin:"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tv_pronunciation"
+            android:layout_below="@+id/et_pronunciation"
+            android:layout_marginTop="14dp"
+            android:text="Audio:"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_pronunciation"
+            android:layout_alignTop="@+id/tv_audio"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="onClick"
+            android:src="@drawable/sound" />
+
+        <TextView
+            android:id="@+id/tv_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_sound"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@+id/image_sound"
+            android:text="Picture:"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_picture"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignLeft="@+id/image_sound"
+            android:layout_alignTop="@+id/tv_picture"
+            android:onClick="onClick"
+            android:src="@drawable/picture" />
+
+        <TextView
+            android:id="@+id/tv_newWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_audio"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="23dp"
+            android:text="Word:"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_meaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_results"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="10dp"
+            android:text="Meaning:"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_add"
+            style="@style/ButtonText"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/et_newWord"
+            android:layout_alignBottom="@+id/et_newWord"
+            android:layout_toRightOf="@+id/et_newWord"
+            android:background="@drawable/btn_blue"
+            android:onClick="onClick"
+            android:text="Search"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tv_chi_eng"
+            android:layout_below="@+id/tv_chi_eng"
+            android:layout_marginTop="24dp"
+            android:text="@string/results"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

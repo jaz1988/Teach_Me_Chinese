@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Teach Me Chinese!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_vocabulary_input">Teach Me Chinese!</string>
+    <string name="title_activity_home">Teach Me Chinese!</string>
+    <string name="title_activity_flashcard">Teach Me Chinese!</string>
+    <string name="on_image"><u>On Image</u></string>
+    <string name="title_activity_pairs">Teach Me Chinese!</string>
+    <string name="title_activity_scramble">Teach Me Chinese!</string>
+    <string name="title_activity_vocab_test">Teach Me Chinese!</string>
+    <string name="title_activity_choose_test">Teach Me Chinese!</string>
+    <string name="results"><u><b>Results</b></u></string>
+    <string name="progress"><u><b>Vocabulary Progress</b></u></string>
+    <string name="test_title"><u><b>Choose the correct meaning to the word shown</b></u></string>
+    <string name="disclaimer">*Content from this application is referenced from <br>New Practical Chinese Reader textbook</br></string>
+    <string name="title_activity_test_results">Teach Me Chinese!</string>
+    <string name="title_activity_progress">Teach Me Chinese!</string>
+    <string name="title_activity_start">Teach Me Chinese!</string>
+
+</resources>

@@ -1,0 +1,111 @@
+<android.gesture.GestureOverlayView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gesturesFlashcard"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    android:gestureStrokeType="multiple"
+    android:eventsInterceptionEnabled="true"
+    android:orientation="vertical">
+    
+	<RelativeLayout
+	    android:id="@+id/RLContainer"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#FFFFFF"  >
+	    
+	    <LinearLayout
+	        android:id="@+id/LLSpinner"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_width="wrap_content"
+		     android:layout_height="wrap_content" >
+	
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:text="Subjects: "
+	            android:textSize="16dp"
+	            android:textStyle="bold" />
+	        
+		     <Spinner
+			     android:id="@+id/spinner1"
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content" />
+	
+	     </LinearLayout>
+     
+	    <TextView
+	        android:id="@+id/tv_flashcard_count"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:layout_below="@+id/LLSpinner"
+	        android:text="1/10"
+	        android:textSize="16dp" />
+	    
+	    <ViewFlipper
+	        android:id="@+id/vfContainer"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/tv_flashcard_count"
+	        android:layout_marginTop="10dp" >
+      
+		</ViewFlipper>
+		
+	    <Button
+	        android:id="@+id/btn_flip"
+	        style="@style/ButtonText"
+	        android:layout_width="100dp"
+	        android:layout_height="30dp"
+	        android:layout_below="@+id/vfContainer"
+	        android:background="@drawable/btn_blue"
+	        android:layout_centerHorizontal="true"
+	        android:onClick="onClick"
+	        android:text="Flip"
+	        android:textSize="18dp"
+	        android:layout_marginTop="20dp" />
+	    
+	    <ImageView
+	        android:id="@+id/imageView2"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_alignBottom="@+id/tv_flashcard_count"
+	        android:layout_marginLeft="12dp"
+	        android:layout_toRightOf="@+id/tv_flashcard_count"
+	        android:src="@drawable/right" />
+	
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_alignBottom="@+id/tv_flashcard_count"
+	        android:layout_marginRight="12dp"
+	        android:layout_toLeftOf="@+id/tv_flashcard_count"
+	        android:src="@drawable/left" />
+
+	    <ImageView
+	        android:id="@+id/iv_right_corner"
+	        android:layout_width="40dp"
+	        android:layout_height="240dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/imageView2"
+	        android:src="@drawable/right_corner" />
+	    
+	    <ImageView
+	        android:id="@+id/iv_left_corner"
+	        android:layout_width="40dp"
+	        android:layout_height="240dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/imageView2"
+	        android:src="@drawable/left_corner" />
+
+	</RelativeLayout>
+
+</android.gesture.GestureOverlayView>

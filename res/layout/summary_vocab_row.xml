@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+    <TextView
+        android:id="@+id/foreignWord"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:background="@drawable/item_body" 
+        android:padding="5dp" 
+        android:layout_weight="1.3"
+        android:gravity="left|center_vertical"
+         />
+    
+    <TextView
+        android:id="@+id/pronunciation"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:background="@drawable/item_body"
+        android:padding="5dp" 
+        android:layout_weight="1.7"
+        android:gravity="left|center_vertical" />
+    
+    <TextView
+        android:id="@+id/meaning"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:background="@drawable/item_body"
+        android:padding="5dp"  
+        android:layout_weight="1.7"
+        android:inputType="textMultiLine"
+        android:gravity="left|center_vertical" />
+	        
+    <RelativeLayout  
+        android:id="@+id/rl_audio"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+		android:background="@drawable/item_body" 
+		android:padding="5dp" 
+		android:layout_weight="1"
+		android:gravity="center" >
+		       
+		 <ImageView
+	        android:id="@+id/Audio"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/sound"
+	        
+			/>
+	 
+	 </RelativeLayout>
+	 
+    
+	 
+ </LinearLayout>

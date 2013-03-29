@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <TextView
+        android:id="@+id/pairs_hint_chinese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="TextView"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+    
+     <TextView
+         android:id="@+id/pairs_hint_pinyin"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/pairs_hint_chinese"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="14dp"
+         android:text="TextView"
+         android:textSize="18dp"
+         android:textStyle="italic" />
+    
+    <TextView
+        android:id="@+id/pairs_hint_english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/pairs_hint_pinyin"
+        android:text="TextView"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/pairs_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pairs_hint_english"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/sound" />
+
+   
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pairs_audio" />
+
+</RelativeLayout>

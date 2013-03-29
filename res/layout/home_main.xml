@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="Vocabulary List"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    
+    <Button
+        android:id="@+id/btn_library"
+        style="@style/ButtonText"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_blue"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:layout_weight="0.2"
+        android:text="Vocabulary List" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="Vocabulary exercises"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    
+    <Button
+        android:id="@+id/btn_flashcard"
+        style="@style/ButtonText"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_pink"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:layout_weight="0.2"
+        android:layout_centerHorizontal="true"
+        android:text="Flashcard" />
+    
+    <Button
+        android:id="@+id/btn_pairs"
+        style="@style/ButtonText"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_pink"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.2"
+        android:text="Pairs" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="Grammar exercises"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    
+    <Button
+        android:id="@+id/btn_scramble"
+        style="@style/ButtonText"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_green"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:layout_weight="0.2"
+        android:layout_centerHorizontal="true"
+        android:text="Scramble" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="Tests"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    
+    <Button
+        android:id="@+id/btn_test"
+        style="@style/ButtonText"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_weight="0.2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_yellow"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="Self -Test" />
+    
+     <Button
+         android:id="@+id/btn_progress"
+         style="@style/ButtonText"
+         android:layout_width="fill_parent"
+         android:layout_height="40dp"
+         android:layout_centerHorizontal="true"
+         android:layout_weight="0.2"
+         android:background="@drawable/btn_yellow"
+         android:gravity="center"
+         android:onClick="onClick"
+         android:text="Check Test Results" />
+
+</LinearLayout>

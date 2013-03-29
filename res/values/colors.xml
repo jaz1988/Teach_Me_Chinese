@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_bg_1">#FFFFFF</color>
+    <color name="list_bg_2">#fef2e8</color>
+    <color name="color_1">#FFF0F5</color>
+    <color name="color_2">#FFEBCD</color>
+    <color name="color_3">#F0FFFF</color>
+    <color name="color_4">#AFEEEE</color>
+    <color name="color_5">#FFEFD5</color>
+</resources>

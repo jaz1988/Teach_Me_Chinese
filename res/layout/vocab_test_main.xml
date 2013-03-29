@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VocabTestActivity" 
+    android:background="#FFFFFF" >
+
+     
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"             
+        android:layout_marginBottom="15dp" 
+        android:layout_marginTop="30dp"
+        android:text="1/2"
+        android:textSize="20dp" />
+    
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/count"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/count"
+        android:src="@drawable/right" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/count"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/count"
+        android:src="@drawable/left" />
+    
+    <RelativeLayout
+        android:id="@+id/TableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/item_body_list"
+        android:layout_below="@+id/count"
+        android:padding="15dp"   >
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="1)"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/chinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/number"
+            android:text="弟弟:"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_alignBottom="@+id/chinese"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/chinese"
+            android:src="@drawable/item_body" />
+	      
+    </RelativeLayout>
+    
+    <LinearLayout
+         android:id="@+id/answerContainer"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content" 
+         android:layout_below="@+id/TableLayout1" 
+         android:onClick="onClick"
+         android:clickable="true"
+         android:orientation="vertical" >
+        
+        
+    </LinearLayout>
+
+   
+    <Button
+        android:id="@+id/next"
+        style="@style/ButtonText"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/answerContainer"
+        android:background="@drawable/btn_blue"
+        android:onClick="onClick"
+        android:text="Next"
+        android:textSize="18dp" />
+
+</RelativeLayout>
